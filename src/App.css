@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+.events{
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+h1{
+    font-family: 'Sansita Swashed';
+    color: rgba(245, 107, 154, 1);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+.btn{
+    background: rgba(55, 174, 171, 1);
+    padding: 1rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.37rem;
+    font-family: 'Fira sans';
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+.events .event-list a{
+    text-decoration: none;
+}
+.events .event-list .event{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    margin-bottom: 1.5rem;
+}
+.events .event-list .event .date-box{
+    border: 2px solid white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 20%;
+    border-radius: 4px;
+    max-height: 66px;
+}
+.events .event-list .event .event-info{
+    flex: 0 0 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.events .event-list .event .event-info h4{
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 2px 1px 0px rgba(245, 107, 154, 1);
+
+}
+.events .event-list .event .event-info h5{
+    font-weight: 300;
+    font-style: italic;
+    font-size: .75rem;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.events .event-list .event .event-info .event-more-info{
+    display: flex;
+    justify-content: space-between;
+}
+.events .event-list .event .event-info .event-more-info .event-price{
+    color: rgba(55, 174, 171, 1);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.summary{
+    background-color: white;
+    border-radius: 3px;
+}
+.summary h3{
+    font-size: .6rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
+.p1{
+    padding: .9rem 1rem;
+}
+.summary header{
+    border-bottom: 1px dashed grey;
+}
+.summary header p{
+    color: rgba(245, 107, 154, 1);
+    font-family: 'Sansita Swashed';
+    font-size: 1.625rem;
+    font-weight: 700;
+    padding: .2rem 0;
+}
+.summary .summary-where{
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px dashed grey;
+}
+.summary .summary-where p{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 1rem 0;
+   
+}
+.summary .time-footer{
+    background: rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: space-between;
+}
+.summary .time-footer span{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 1.125rem;
+    display: block;
+    padding-top: .5rem;
+}
+.summary .time-footer .dashed{
+    flex: 1;
+    border-right: 1px dashed grey;
+    padding: .8rem 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buy{
+    padding: 1.5rem;
+    padding-top: 6rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buy h2{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ticketsContainer{
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.ticketsContainer h2{
+    margin-bottom: 3rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ticketsContainer h3{
+    color: rgba(245, 107, 154, 1);
+    font-family: 'Sansita Swashed';
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding: .2rem 0;
+}
+.ticketsContainer p{
+    color: rgba(55, 174, 171, 1);
+    font-size: 1.18rem;
+    font-weight: 600;
+    padding: .5rem 0;
+}
+.ticketsContainer .arena{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    padding: .5rem 0;
+    display: block;
+    margin-bottom: 50%;
+}
+.price{
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px rgba(245, 107, 154, 1);
 }

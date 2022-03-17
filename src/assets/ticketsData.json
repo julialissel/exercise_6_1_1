@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "artist" : "Lasse-Stefans",
+        "arena" : "Dansbandsveckan",
+        "timeStart" : "18:00",
+        "timeEnd": "20:00",
+        "date" : 22,
+        "month": "JUL",
+        "price" : 399
+    },
+    {
+        "id": 2,
+        "artist" : "Kid Laroi",
+        "arena" : "Fryshuset",
+        "timeStart" : "20:00",
+        "timeEnd": "23:30",
+        "date" : 2,
+        "month": "APR",
+        "price" : 599
+    },
+    {
+        "id": 3,
+        "artist" : "Justin Bieber",
+        "arena" : "Tele2 Arena",
+        "timeStart" : "18:00",
+        "timeEnd": "21:30",
+        "date" : 15,
+        "month": "AUG",
+        "price" : 699
+    },
+    {
+        "id": 4,
+        "artist" : "Kygo",
+        "arena" : "Avicii Arena",
+        "timeStart" : "22:00",
+        "timeEnd": "02:30",
+        "date" : 25,
+        "month": "NOV",
+        "price" : 899
+    }
+]
