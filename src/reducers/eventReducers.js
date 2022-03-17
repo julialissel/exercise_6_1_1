@@ -4,7 +4,12 @@ const initialState = {
 
 const eventReducers = (state = initialState, action) => {
     switch(action.type){
-        case 'SAVE_EVENT':
+        case 'ALL_EVENT':
+            return {
+                ...state,
+                events: action.payload
+            }
+        case 'CURRENT_EVENT':
             return {
                 ...state,
                 events: action.payload

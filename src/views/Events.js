@@ -3,19 +3,19 @@ import { Link} from "react-router-dom";
 import { useEffect } from 'react';
 import ticketsData from '../assets/ticketsData.json';
 import {useSelector, useDispatch} from 'react-redux';
-import { saveEvent } from '../actions/eventActions';
+import { allEvent } from '../actions/eventActions';
+import { currentEvent } from '../actions/eventActions';
 import Event from '../components/Event';
 
 function Events(){
 
     const dispatch = useDispatch();
+    const dispatchD = useDispatch();
     const events = useSelector((state) => {return state.events});
 
     useEffect( () => {
-        
-    
-          dispatch(saveEvent(ticketsData));
-        
+
+          dispatch(allEvent(ticketsData));
         
       }, []);//körs enbart vid sidladdning 
 
@@ -29,6 +29,7 @@ function Events(){
                             pathname: `/buy/${event.id}`
                         }}
                         key={event.id}
+                        onClick={() =>{ dispatchD(currentEvent(event))}}
                     >   
                         <Event data={event} />
                         

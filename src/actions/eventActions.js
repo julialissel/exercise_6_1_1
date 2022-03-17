@@ -1,9 +1,15 @@
 
 // Spara Event 
 
-export const saveEvent = (event) =>{
+export const allEvent = (event) =>{
     return{
-        type: 'SAVE_EVENT',
+        type: 'ALL_EVENT',
+        payload: event
+    }
+}
+export const currentEvent = (event) =>{
+    return{
+        type: 'CURRENT_EVENT',
         payload: event
     }
 }
